@@ -1,0 +1,95 @@
+﻿<!-- added colour to recolour person button -->
+<panel navigation_container="true">
+	<attachment_group class="vertical_arrange_autosize"/>
+
+	<list id="properties_to_forward">
+		<record get_property="objt" set_property="objt" target="perC"/>
+	</list>
+
+	<container id="perC" class="client_object_viewer_xml_panel" height="26">
+		<attachment_group class="horizontal_arrange" horizontal_alignment="left" />
+
+		<!-- added colour -->
+		<widget class="person_button" auto_size="horizontal" size="large" style="semi_bold" height="26" colour="title">
+			<record id="object_property" get_property="Pers" set_property="valu"/>
+		</widget>
+		<widget class="job_label" alignment="centre" auto_size="horizontal" height="26" colour="faded text">
+			<record id="object_property" get_property="PcJj" set_property="valu"/>
+		</widget>
+	</container>
+
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill"/>
+
+		<container class="table" entity_layout_id="at05" id="ort1" auto_size="vertical" mode="fill_rows, stripe_rows, select_rows, select_multiple" layout="-1, 16" name="table of resp" row_spacing="4" sort_disabled="true">
+			<boolean id="save_session_state" value="true" />
+			<string id="fixed_size_rows" value="false" />
+			<string id="auto_size_rows" value="true" />
+			<global id="override_select_row_flags" name="platform_is_stadia"/>
+
+
+			<list id="column_table_properties">
+				<record id="txt1" alignment="left,centre_y">
+					<record id="widget_info" class="icon_button" auto_size="vertical" navigation_focus_target="false">
+						<string id="show_button_appearance" value="false"/>
+						<string id="icon" value="icons/16px/bullet"/>
+						<string id="colour" value="text"/>
+						<string id="multiline" value="true"/>
+					</record>
+				</record>
+				<record id="pop1">
+					<record id="widget_info" class="widget_popup_button" icon="icons/16px/down" appearance="none">
+						<string id="widget_type" value="club_staff_responsibility_widget"/>
+					</record>
+				</record>
+			</list>
+		</container>
+
+		<container class="table" id="ort2" auto_size="vertical" mode="fill_rows, stripe_rows, select_rows, select_multiple" layout="-1, 16" name="table of resp" row_spacing="4" sort_disabled="true">
+			<boolean id="save_session_state" value="true" />
+			<string id="fixed_size_rows" value="false" />
+			<string id="auto_size_rows" value="true" />
+			<global id="override_select_row_flags" name="platform_is_stadia"/>
+
+
+			<list id="column_table_properties">
+				<record id="txt1" alignment="left,centre_y">
+					<record id="widget_info" class="icon_button" auto_size="vertical" navigation_focus_target="false" >
+						<string id="show_button_appearance" value="false"/>
+						<string id="icon" value="icons/16px/bullet"/>
+						<string id="colour" value="text"/>
+						<string id="multiline" value="true"/>
+					</record>
+				</record>
+				<record id="pop1">
+					<record id="widget_info" class="widget_popup_button" icon="icons/16px/down" appearance="none">
+						<string id="widget_type" value="club_staff_responsibility_widget"/>
+					</record>
+				</record>
+			</list>
+		</container>
+
+		<container class="table" id="ort3" auto_size="vertical" mode="fill_rows, stripe_rows, select_rows, select_multiple" layout="-1, 16" name="table of resp" row_spacing="4" sort_disabled="true">
+			<boolean id="save_session_state" value="true" />
+			<string id="fixed_size_rows" value="false" />
+			<string id="auto_size_rows" value="true" />
+			<global id="override_select_row_flags" name="platform_is_stadia"/>
+
+			<list id="column_table_properties">
+				<record id="txt1" alignment="left,centre_y">
+					<record id="widget_info" class="icon_button" auto_size="vertical" navigation_focus_target="false">
+						<string id="show_button_appearance" value="false"/>
+						<string id="icon" value="icons/16px/bullet"/>
+						<string id="colour" value="text"/>
+						<string id="multiline" value="true"/>
+					</record>
+				</record>
+				<record id="pop1">
+					<record id="widget_info" class="widget_popup_button" icon="icons/16px/down" appearance="none">
+						<string id="widget_type" value="club_staff_responsibility_widget"/>
+					</record>
+				</record>
+			</list>
+		</container>
+	</container>
+</panel>

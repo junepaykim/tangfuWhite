@@ -1,0 +1,48 @@
+﻿<panel>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+    <string id="skin_style" value="subtle box" />
+
+    <container class="scrolling_box">
+        <container id="ctbx">
+            <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="280, -1" horizontal_gap="10" />
+
+            <container>
+                <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+                <!-- rumours list -->
+                <container class="main_subtle_box">
+                    <attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" horizontal_inset="10" vertical_offset="8" vertical_gap="10" />
+
+					<!-- found in competition folder -->
+                    <widget class="transfer_deadline_day_logo_widget" mode="0" />
+                    
+                    <widget class="spacer" height="6" />
+
+                    <container>
+                        <attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="16, -1" />
+
+                        <widget class="picture" file="icons/custom/transfer deadline day/transfer status/rumour" scale_picture="true" image_alignment="centre" height="16" width="16" red_replacement="accent" />
+                        <widget class="text" font="title" size="large" colour="accent" alignment="left, centre_y" auto_size="vertical">
+                            <translation id="text" translation_id="539004" type="use" value="Deadline Day Rumours[COMMENT: AREA: UI; SUB-AREA: Transfer Deadline Day Build Up News; FR: 34774; TONE: Formal; CHARLIMIT: None; REF-ID: ; NOTE: Section name for area describing the top deadline day transfer rumours]" />
+                        </widget>
+                    </container>
+
+                    <widget class="spacer" height="6" />
+
+                    <widget class="player_deadline_day_transfer_details_panel" id="Rum1" use_short_fee_string="true" />
+
+                    <widget class="horizontal_divider" height="1" />
+
+                    <widget class="player_deadline_day_transfer_details_panel" id="Rum2" use_short_fee_string="true" />
+
+                    <widget class="horizontal_divider" height="1" />
+
+                    <widget class="player_deadline_day_transfer_details_panel" id="Rum3" use_short_fee_string="true" />
+                </container>
+            </container>
+
+            <widget class="inbox_body_text" id="bdtx" auto_size="vertical" />
+        </container>
+    </container>
+</panel>

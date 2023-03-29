@@ -1,0 +1,87 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
+
+    <!-- table for headers only -->
+    <widget class="table" layout="-4, -2, -2, -1" mode="stripe_rows" auto_size_rows="vertical" all_content_same_height="false" auto_size="vertical" sort_disabled="true">
+        <list id="column_table_properties">
+            <record index="0">
+                <record id="column_heading">
+                    <translation id="text" translation_id="232113" type="use" value="Players"/>
+                </record>
+            </record>
+            <record index="1">
+                <record id="column_heading">
+                    <translation id="text" translation_id="227737" type="use" value="Club"/>
+                </record>
+            </record>
+            <record index="2">
+                <record id="column_heading">
+                    <translation id="text" translation_id="227953" type="use" value="Transfer Status"/>
+                </record>
+            </record>
+            <record index="3">
+                <record id="column_heading">
+                    <translation id="text" translation_id="242861" type="use" value="Offer"/>
+                </record>
+            </record>
+        </list>
+    </widget>
+
+    <container class="horizontal_arrange_container" height="20" >
+        <widget class="picture" file="icons/16px/transfer in" scale_picture="true" image_alignment="centre" height="16" width="16"/>
+        <widget class="text" font="title" size="large" colour="text" alignment="left, centre_y" auto_size="all">
+            <translation id="text" translation_id="260359" type="use" value="In[COMMENT: transfers section; title for box showing players in]"/>
+        </widget>
+    </container>
+
+    <container class="horizontal_arrange_container" auto_size="vertical" offset="20">
+        <widget class="text" id="NoIT" colour="text" alignment="left, centre_y" auto_size="all" hidden="true"/>
+    </container>
+
+    <!-- players in -->
+    <widget class="table" id="PlIn" layout="-4, -2, -2, -1" mode="stripe_rows" row_height="50" all_content_same_height="true" auto_size="vertical" sort_disabled="true">
+        <list id="column_table_properties">
+            <record index="0">
+                <record id="widget_info" class="client_object_viewer_xml_panel" file="widgets/player picture name no colour and description widget"/>
+            </record>
+            <record index="1">
+                <record id="widget_info" class="team_button" navigation_focus_target="true"/>
+            </record>
+            <record index="2">
+                <record id="widget_info" class="player_transfer_offer_status_widget" alignment="left, centre_y" navigation_focus_target="false"/>
+            </record>
+            <record index="3">
+                <record id="widget_info" class="text" style="bold" size="large" colour="text" alignment="left, centre_y"/>
+            </record>
+        </list>
+    </widget>
+
+    <container class="horizontal_arrange_container" height="20">
+        <widget class="picture" file="icons/16px/transfer out" scale_picture="true" image_alignment="centre" height="16" width="16"/>
+        <widget class="text" font="title" size="large" colour="text" alignment="left, centre_y" auto_size="all">
+            <translation id="text" translation_id="260360" type="use" value="Out[COMMENT: transfers section; title for box showing players out]"/>
+        </widget>
+    </container>
+
+    <container class="horizontal_arrange_container" auto_size="vertical" offset="20">
+        <widget class="text" id="NoOT" colour="text" alignment="left, centre_y" auto_size="all" hidden="true"/>
+    </container>
+
+    <!-- players out -->
+    <widget class="table" id="PlOu" layout="-4, -2, -2, -1" mode="stripe_rows" row_height="52" all_content_same_height="true" auto_size="vertical" sort_disabled="true">
+        <list id="column_table_properties">
+            <record index="0">
+                <record id="widget_info" class="client_object_viewer_xml_panel" file="widgets/player picture name no colour and description widget"/>
+            </record>
+            <record index="1">
+                <record id="widget_info" class="team_button" navigation_focus_target="true"/>
+            </record>
+            <record index="2">
+                <record id="widget_info" class="player_transfer_offer_status_widget" alignment="left, centre_y" navigation_focus_target="false"/>
+            </record>
+            <record index="3">
+                <record id="widget_info" class="text" style="bold" size="large" colour="text" alignment="left, centre_y"/>
+            </record>
+        </list>
+    </widget>
+</panel>

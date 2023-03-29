@@ -1,0 +1,81 @@
+<!-- basic details view -->
+<!-- tweaked home pen result widget to match away -->
+<panel id="fcpa" height="28">
+  <translation id="title" translation_id="247231" type="use" value="Fixture Competition" />
+  <!-- Note: Height defined statically ^ -->
+  <layout class="arrange_horizontal_attachment" layout="-7, -4, -31, -2, -2, 50, -2, -2, -36, -7,4,40" gap="6" offset="0" />
+  <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+  <!-- *** Home team *** -->
+  <container>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+    
+    <!-- League position -->
+    <widget id="hpos" class="text" colour="league position" spec="text" size="small" alignment="left,centre_y" />
+    <!-- Nation -->
+    <widget id="hnat" class="nation_button" colour="nation" hidden="true" alignment="left,centre_y" />
+  </container>
+  
+  <!-- TV icon -->
+  <container>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+    <!--widget id="ftv " class="label" colour="fixture tv" alignment="right,centre_y" hidden="true">
+      <translation id="text" translation_id="242415" type="use" value="TV[COMMENT - match on tv, needs to be short text]" />
+    </widget-->
+    <widget id="ftv " class="picture" file="icons/16px/tv" scale_picture="false" image_alignment="centre" hidden="true"/>
+  </container>
+  
+  <!-- Team name -->
+  <widget id="hnam" class="team_button" icon_alignment="right" alignment="right,centre_y" />
+  
+  <!-- Result added colour and alignmen to match away status -->
+  <widget id="hres" class="label" alignment="right,centre_y" colour="fixture outcome" />
+  
+  <!-- Aggregate Score -->
+  <widget id="hagg" class="label" colour="result aggregate" alignment="right,centre_y" />
+
+  <!-- *** Score *** -->
+  <container>
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+    <widget id="scor" class="text" colour="fixture score separator" spec="text" size="large" alignment="centre" />
+    <widget id="attd" class="button" appearance="buttons/text/button" colour="fixture score separator" spec="text" size="large" alignment="centre" hidden="true" />
+  </container>
+
+  <!-- *** Away Team *** -->
+  <!-- Aggregate Score -->
+  <widget id="aagg" class="label" colour="result aggregate" />
+  
+  <!-- Result -->
+  <widget id="ares" class="label" colour="fixture outcome" />
+  
+  <!-- Team name -->
+  <widget id="anam" class="team_button" />
+  
+  <container id="temp">
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+    <!-- League position -->
+    <widget id="apos" class="text" colour="league position" spec="text" size="small" alignment="right,centre_y" />
+    <!-- Nation -->
+    <widget id="anat" class="nation_button" colour="nation" hidden="true" alignment="left,centre_y" />
+  </container>
+
+  <container/>
+
+  <widget class="subtle_popup_button" id="spop" icon="icons/16px/search" icon_alignment="left,centre_y" select_event="esms" appearance="buttons/custom/over state only/button">
+    <list id="items">
+      <record id="0" icon="icons/16px/search" red_replacement="button_icon">
+        <translation id="text" translation_id="451321" type="use" value="No action[COMMENT: FR 21106, take no action on a scouting reminder recommendation for a competition]" />
+      </record>
+      <record id="1" icon="icons/16px/search" red_replacement="green 500">
+        <translation translation_id="450039" type="use" id="text" value="Scout match[COMMENT: FR 21106, take action on a scouting reminder recommendation for a competition]" />
+      </record>
+      <record id="2" icon="icons/16px/search" red_replacement="blue 500">
+        <global id="hidden" name="platform_is_handheld"/>
+        <translation id="text" translation_id="451322" type="use" value="Attend match[COMMENT: FR 21106, take action on a scouting reminder recommendation for a competition]" />
+      </record>
+    </list>
+  </widget>
+
+</panel>

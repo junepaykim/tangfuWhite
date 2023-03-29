@@ -1,0 +1,19 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" gap="0" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+	<widget height="18" class="table" id="left" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+
+		<record id="default_properties" col="0" />
+
+		<!-- similar players "dubbed the new Ronaldo!"
+		<widget class="label" row="0" alignment="left,bottom" font="label" auto_size="vertical">
+		<translation id="text" translation_id="247714" type="use" value="Media Comparison[COMMENT: player_profile_panel_title; current legendary player this player is similar to]" />
+		</widget> -->
+		<widget height="18" class="label" id="meco" row="0" auto_size="none" spec="text" alignment="centre,centre_y,can_scale" size="9"  colour="white" background_colour="fg" multiline="true" >
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" />		
+		</widget>
+	</widget>
+
+
+</panel>

@@ -1,0 +1,38 @@
+<panel width="100" height="150">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="inner_box_no_margin" id="arBi" >
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<container class="main_box" appearance="boxes/custom/calendar/cell/paper">
+			<layout class="arrange_vertical_attachment" layout="20,25,-1" offset="0" gap="1" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="2" />
+
+			<widget class="date_cell" id="date" alignment="centre" colour="text" size="small" format="[%date#1-date_short_month]" navigation_focus_target="false">
+				<record id="object_property">
+					<integer id="get_property" value="fxdt" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+
+			<widget class="fixture_availability_label" colour="text" font="text" size="small" alignment="centre" default_focus="true">
+
+				<!-- we have one embedded widget here (e.g. a radio button) so we need to make sure that we have the right attachment on it -->
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<record id="object_property" dont_set_hint="true" >
+					<integer id="get_property" value="Fxda" />
+					<integer id="set_property" value="valu" />
+				</record>
+			</widget>
+			
+			<container id="entR">
+
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="2" apply_to_children="true" />
+
+				<container class="calendar_detailed_event_panel" id="firE" file="generic/calendar detailed event panel" hidden="true" />
+				<container class="calendar_detailed_event_panel" id="secE" file="generic/calendar detailed event panel"  hidden="true"/>
+			</container>
+		</container>
+	</container>
+</panel>

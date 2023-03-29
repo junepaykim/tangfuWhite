@@ -1,0 +1,87 @@
+<panel class="client_object_viewer_xml_panel" id="CrEd">
+    <attachment_group class="vertical_arrange_autosize"/>
+    
+    <container class="tabbed_container" navigation_container="false" navigation_focus_target="false" default_item="cnt0" height="400">
+        <record id="top_properties">
+            <flags id="appearance" value="tabs/subsection"/>
+            <flags id="height" value="40" />
+            <boolean id="use_alt_end_tab_appearances" value="false"/>
+            <global id="top_level_tab_focus" name="ui.is_fmt_controller_skin"/>
+        </record>
+
+        <container id="cnt0">
+            <translation id="title" translation_id="293059" type="use" value="Rival Clubs" />
+            <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
+
+            <widget class="client_object_list_property_panel" id="ricl" edit_mode="true" navigation_container="true">
+                <record id="list_table_properties">
+                    <integer id="default_sort_column" value="leve" />
+                    <list id="views">
+                        <record id="over">
+                            <record id="view">
+                                <flags id="club" />
+                                <!-- club -->
+                                <flags id="leve" />
+                                <!-- rel level -->
+                            </record>
+                        </record>
+
+                    </list>
+                </record>
+                <record id="Cols" file="properties/relationship properties" />
+                <integer id="viewed_property_ids" value="Crvc" />
+            </widget>
+        </container>
+
+        <container id="cnt1">
+            <translation id="title" translation_id="293060" type="use" value="Favourite People" />
+            <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+            <widget class="client_object_list_property_panel" id="prfp" edit_mode="true" navigation_container="true">
+                <record id="list_table_properties">
+                    <integer id="default_sort_column" value="leve" />
+                    <list id="views">
+                        <record id="over">
+                            <record id="view">
+                                <flags id="pers" />
+                                <!-- person -->
+                                <flags id="leve" />
+                                <!-- rel level -->
+                                <flags id="perm" />
+                                <!-- Permenant -->
+                            </record>
+                        </record>
+                    </list>
+                </record>
+                <record id="Cols" file="properties/relationship properties" />
+                <integer id="viewed_property_ids" value="Cfvp" />
+            </widget>
+        </container>
+
+        <container id="cnt2">
+            <translation id="title" translation_id="293061" type="use" value="Disliked People" />
+            <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+            <widget class="client_object_list_property_panel" id="prdp" edit_mode="true" navigation_container="true">
+                <record id="list_table_properties">
+                    <integer id="default_sort_column" value="leve" />
+                    <list id="views">
+                        <record id="over">
+                            <record id="view">
+                                <flags id="pers" />
+                                <!-- person -->
+                                <flags id="leve" />
+                                <!-- rel level -->
+                                <flags id="perm" />
+                                <!-- Permenant -->
+                            </record>
+                        </record>
+                    </list>
+                </record>
+                <record id="Cols" file="properties/relationship properties" />
+                <integer id="viewed_property_ids" value="Cdsp" />
+            </widget>
+        </container>
+    </container>
+
+</panel>

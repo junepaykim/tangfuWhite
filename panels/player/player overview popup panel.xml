@@ -1,0 +1,76 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="10" horizontal_inset="0" />
+
+	<boolean id="suppress_update_after_selection" value="true"/>
+
+
+	 <container height="164" >
+          <layout class="arrange_horizontal_attachment" layout="-1,1,-1,1,-1" offset="0" gap="5" />
+          <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+	<!-- 八卦图1 -->
+	<widget file="Tangfu/tangfu player attribute analyser panel3" id="paAn1" class="client_object_viewer_xml_panel"  late_loading="true">
+		<translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+		<record id="object_property" get_property="objt" set_property="objt"/>
+	  </widget>	
+		
+		<widget class="vertical_divider">
+			<layout class="stick_to_sides_attachment" alignment="vertical"/>
+		</widget>
+		
+	<!-- 八卦图2 -->
+	<widget file="Tangfu/tangfu player attribute analyser panel4" id="paAn2" class="client_object_viewer_xml_panel"  late_loading="true">
+		<translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+		<record id="object_property" get_property="objt" set_property="objt"/>
+	  </widget>	
+		
+		<widget class="vertical_divider">
+			<layout class="stick_to_sides_attachment" alignment="vertical"/>
+		</widget>
+		
+		<!-- 八卦图3 -->
+	<widget file="Tangfu/tangfu player attribute analyser panel5" id="paAn3" class="client_object_viewer_xml_panel"  late_loading="true">
+		<translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+		<record id="object_property" get_property="objt" set_property="objt"/>
+	  </widget>	
+
+	
+	</container>
+
+	<widget class="horizontal_divider" />
+
+	<!-- Middle row of large panels -->
+	<container height="375">
+		<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="14" gap="1"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+		<container class="client_object_viewer_selector_panel" id="pus1" file="player/tf player overview big selector panel" save_session_state="true">
+			<widget class="player_attributes_panel" id="patt" late_loading="true">
+				<translation id="title" translation_id="229822" type="use" value="Attributes"/>
+				<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+		</container>
+	</container>
+
+	<container class="inner_subtle_box" height="135" draw_vertical_dividers="true">
+		<layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" gap="10"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="5" apply_to_children="true"/>
+
+		<record id="default_properties" file="player/player overview popup selector panel" save_session_state="true" />
+
+		<container class="client_object_viewer_selector_panel" id="pus2" >
+			<integer id="default_for_unemployed_managers" value="tfyc3"/>
+			<integer id="default_for_international_managers_other_team" value="tfyc3"/>
+			<integer id="default_for_everyone_else" value="tfyc3"/>
+			<integer id="default_for_versus_mode" value="tfyc3"/>
+		</container>
+
+
+		<container class="client_object_viewer_selector_panel" id="pus3">
+			<integer id="default_for_unemployed_managers" value="Phap"/>
+			<integer id="default_for_international_managers_other_team" value="Phap"/>
+			<integer id="default_for_everyone_else" value="Phap"/>
+			<integer id="default_for_versus_mode" value="Phap"/>
+		</container>
+	</container>
+
+</panel>

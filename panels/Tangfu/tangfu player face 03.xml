@@ -1,0 +1,128 @@
+
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	<boolean id="should_force_refresh" value="true"/>
+	
+	
+				<!--中间头像-->			
+		
+					
+			
+				
+				
+				
+				
+					<widget class="object_portrait_picture" id="pict" scale_picture="true" image_alignment="centre_x,centre_y">
+						<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>						
+						<record id="object_property">
+							<integer id="get_property" value="objt"/>
+							<integer id="set_property" value="objt"/>
+						</record>
+					</widget>
+					
+					
+							<!-- 框 -->
+		<widget class="value_based_picture" id="Rca1" alignment="centre_x,centre_y" scale_picture="true" transparency="1">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			<list id="value_list">
+				<record min_value="0" max_value="69" file="tangfu/face/RCA70" />
+				<record min_value="79" max_value="89" file="tangfu/face/RCA90"/>
+				<record min_value="90" max_value="109" file="tangfu/face/RCA110"/>
+				<record min_value="110" max_value="129" file="tangfu/face/RCA130"/>
+				<record min_value="130" max_value="149" file="tangfu/face/RCA150"/>
+				<record min_value="150" max_value="179" file="tangfu/face/RCA180"/>	
+				<record min_value="180" max_value="200" file="tangfu/face/RCA200"/>		
+			</list>
+			<record id="object_property">			
+				<integer id="get_property" value="ERCA" />
+			</record>
+		</widget>
+					
+					
+					
+				<!-- Player Status  -->
+				<widget class="player_status_all_button" appearance="buttons/custom/status" id="Pnfa" alignment="bottom" gap="1" maximised="true">
+					<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
+					<layout class="stick_to_sides_attachment" alignment="right" inset="-20" />
+						<record id="object_property">
+							<integer id="get_property" value="PnaS"/>
+						</record>
+				</widget>	
+					
+		
+		
+		<!-- 右边CA -->
+	<widget class="value_based_picture" id="ca1" scale_picture="false" transparency="1">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="-80"/>
+		<layout class="stick_to_sides_attachment" alignment="right" inset="-120"/>
+		<list id="value_list">
+			<record min_value="0" max_value="19" file="tangfu/capa/E" />
+			<record min_value="20" max_value="39" file="tangfu/capa/D-"/>
+			<record min_value="40" max_value="59" file="tangfu/capa/D"/>
+			<record min_value="60" max_value="79" file="tangfu/capa/D+"/>
+			<record min_value="80" max_value="89" file="tangfu/capa/C-"/>
+			<record min_value="90" max_value="99" file="tangfu/capa/C"/>
+			<record min_value="100" max_value="109" file="tangfu/capa/C+"/>
+			<record min_value="110" max_value="119" file="tangfu/capa/B-"/>
+			<record min_value="120" max_value="129" file="tangfu/capa/B"/>
+			<record min_value="130" max_value="139" file="tangfu/capa/B+"/>
+			<record min_value="140" max_value="149" file="tangfu/capa/A-" />
+			<record min_value="150" max_value="159" file="tangfu/capa/A"/>
+			<record min_value="160" max_value="169" file="tangfu/capa/A+"/>
+			<record min_value="170" max_value="179" file="tangfu/capa/S-"/>
+			<record min_value="180" max_value="189" file="tangfu/capa/S"/>
+			<record min_value="190" max_value="200" file="tangfu/capa/S+"/>			
+		</list>
+		<record id="object_property">			
+			<integer id="get_property" value="PRCA" />
+		</record>
+	</widget>
+	<!-- CA -->
+	<widget class="label" alignment="centre_x, centre_y"  size="8" >
+		<layout class="stick_to_sides_attachment" alignment="top" inset="-60"/>
+		<layout class="stick_to_sides_attachment" alignment="right" inset="-120"/>
+		<translation id="text" type="use" value="CA" />
+	</widget>
+	
+
+	<!-- 右边PA -->
+	<widget class="value_based_picture" id="pa1" scale_picture="false" transparency="1">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="-40"/>
+		<layout class="stick_to_sides_attachment" alignment="right" inset="-120"/>
+		<list id="value_list">
+			<record min_value="0" max_value="19" file="tangfu/capa/ee" />
+			<record min_value="20" max_value="39" file="tangfu/capa/dd-"/>
+			<record min_value="40" max_value="59" file="tangfu/capa/dd"/>
+			<record min_value="60" max_value="79" file="tangfu/capa/dd+"/>
+			<record min_value="80" max_value="89" file="tangfu/capa/cc-"/>
+			<record min_value="90" max_value="99" file="tangfu/capa/cc"/>
+			<record min_value="100" max_value="109" file="tangfu/capa/cc+"/>
+			<record min_value="110" max_value="119" file="tangfu/capa/bb-"/>
+			<record min_value="120" max_value="129" file="tangfu/capa/bb"/>
+			<record min_value="130" max_value="139" file="tangfu/capa/bb+"/>
+			<record min_value="140" max_value="149" file="tangfu/capa/aa-" />
+			<record min_value="150" max_value="159" file="tangfu/capa/aa"/>
+			<record min_value="160" max_value="169" file="tangfu/capa/aa+"/>
+			<record min_value="170" max_value="179" file="tangfu/capa/ss-"/>
+			<record min_value="180" max_value="189" file="tangfu/capa/ss"/>
+			<record min_value="190" max_value="200" file="tangfu/capa/ss+"/>			
+		</list>
+		<record id="object_property">			
+			<integer id="get_property" value="PPAB" />
+		</record>
+	</widget>
+
+	<!-- PA -->
+	<widget class="label" alignment="centre_x, centre_y" size="8">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="-20"/>
+		<layout class="stick_to_sides_attachment" alignment="right" inset="-120"/>
+		<translation id="text"  type="use" value="PA" />
+	</widget>
+
+
+
+		
+	
+
+
+</panel>

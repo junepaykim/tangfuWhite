@@ -1,0 +1,9 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_alignment="fill"/>
+
+	<!-- value -->
+	<widget class="text" id="pJtt" alignment="left, centre_y" />
+
+	<!-- description -->
+	<widget class="text" id="pJdt" alignment="left,top" auto_size="vertical" size="small" colour="faded text"/>
+</panel>

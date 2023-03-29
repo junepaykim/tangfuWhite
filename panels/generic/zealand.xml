@@ -1,0 +1,250 @@
+<!-- CREATED BY FMENHANCED -->
+<panel>
+    <layout class="horizontal_arrange_autosize"/>
+
+    <record id="default_properties" width="44" icon_colour="white"/>
+
+    <!-- Club Vision -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Club Improvements" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- overview : overview -->
+                <record mode="equal" get_property="section" value="tcbr"/>
+                <!-- overview : members -->
+                <record mode="equal" get_property="section" value="tcsB" comparison_mode="or"/>
+                <!-- performance : performance -->
+                <record mode="equal" get_property="section" value="tcon" comparison_mode="or"/>
+                <!-- performance : club vision -->
+                <record mode="equal" get_property="section" value="Cvis" comparison_mode="or"/>
+                <!-- performance : competition performance -->
+                <record mode="equal" get_property="section" value="tccp" comparison_mode="or"/>
+                <!-- performance : match performance -->
+                <record mode="equal" get_property="section" value="tcma" comparison_mode="or"/>
+                <!-- performance : transfer activity -->
+                <record mode="equal" get_property="section" value="tctc" comparison_mode="or"/>
+                <!-- performance : tactics -->
+                <record mode="equal" get_property="section" value="tacc" comparison_mode="or"/>
+                <!-- performance : squad -->
+                <record mode="equal" get_property="section" value="tsqc" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Finances -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Finances" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- summary -->
+                <record mode="equal" get_property="section" value="tfin"/>
+                <!-- income -->
+                <record mode="equal" get_property="section" value="tFii" comparison_mode="or"/>
+                <!-- expenditure -->
+                <record mode="equal" get_property="section" value="tFie" comparison_mode="or"/>
+                <!-- wages: summary -->
+                <record mode="equal" get_property="section" value="tFis" comparison_mode="or"/>
+                <!-- wages: salary commitments -->
+                <record mode="equal" get_property="section" value="tFSC" comparison_mode="or"/>
+                <!-- wages: code of conduct -->
+                <record mode="equal" get_property="section" value="cFin" comparison_mode="or"/>
+                <!-- ffp: summary -->
+                <record mode="equal" get_property="section" value="tFfp" comparison_mode="or"/>
+                <!-- ffp: salary -->
+                <record mode="equal" get_property="section" value="tFpS" comparison_mode="or"/>
+                <!-- debt and loans -->
+                <record mode="equal" get_property="section" value="tFid" comparison_mode="or"/>
+                <!-- sponsors & others -->
+                <record mode="equal" get_property="section" value="tFiS" comparison_mode="or"/>
+                <!-- projection -->
+                <record mode="equal" get_property="section" value="tFip" comparison_mode="or"/>
+                <!-- league specific -->
+                <record mode="equal" get_property="section" value="tFls" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Player Attributes -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Player Attributes" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!--profile-->
+                <record mode="equal" get_property="section" value="Plov"/>
+                <!-- overview: attributes -->
+                <record mode="equal" get_property="section" value="Pply" comparison_mode="or"/>
+                <!-- overview: happiness -->
+                <record mode="equal" get_property="section" value="Prel" comparison_mode="or"/>
+                <!-- overview: information -->
+                <record mode="equal" get_property="section" value="Ppin" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Scouting -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Scouting" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- scouting centre -->
+                <record mode="equal" get_property="section" value="tssc"/>
+                <!-- players: player search -->
+                <record mode="equal" get_property="section" value="plas" comparison_mode="or"/>
+                <!-- players: scouted -->
+                <record mode="equal" get_property="section" value="sasp" comparison_mode="or"/>
+                <!-- players: analysed -->
+                <record mode="equal" get_property="section" value="saap" comparison_mode="or"/>
+                <!-- players: discarded list -->
+                <record mode="equal" get_property="section" value="tsdl" comparison_mode="or"/>
+                <!-- players: player recent -->
+                <record mode="equal" get_property="section" value="rcnt" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Squad -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Your Squad" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- players -->
+                <record mode="equal" get_property="section" value="TeSq"/>
+                <!-- players: numbers -->
+                <record mode="equal" get_property="section" value="TeSN" comparison_mode="or"/>
+                <!-- players: registration -->
+                <record mode="equal" get_property="section" value="*ssl" comparison_mode="or"/>
+                <!-- players: all players -->
+                <record mode="equal" get_property="section" value="Capl" comparison_mode="or"/>
+                <!-- players: export -->
+                <record mode="equal" get_property="section" value="TExa" comparison_mode="or"/>
+                <!-- international: players on int duty -->
+                <record mode="equal" get_property="section" value="tifp" comparison_mode="or"/>
+                <!-- international: int friendly availability -->
+                <record mode="equal" get_property="section" value="TCii" comparison_mode="or"/>
+                <!-- concerns & unhappiness -->
+                <record mode="equal" get_property="section" value="Trgu" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Staff -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Staff" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- overview: overview -->
+                <record mode="equal" get_property="section" value="tcso"/>
+                <!-- overview: coaching team -->
+                <record mode="equal" get_property="section" value="tcsc" comparison_mode="or"/>
+                <!-- overview: medical team -->
+                <record mode="equal" get_property="section" value="tcsm" comparison_mode="or"/>
+                <!-- overview: scouting & transfers team -->
+                <record mode="equal" get_property="section" value="tcSS" comparison_mode="or"/>
+                <!-- overview: all -->
+                <record mode="equal" get_property="section" value="tcsp" comparison_mode="or"/>
+                <!-- responsibilities: overview -->
+                <record mode="equal" get_property="section" value="mnrO" comparison_mode="or"/>
+                <!-- responsibilities: board -->
+                <record mode="equal" get_property="section" value="mnbl" comparison_mode="or"/>
+                <!-- responsibilities: staff -->
+                <record mode="equal" get_property="section" value="mnst" comparison_mode="or"/>
+                <!-- responsibilities: advice and reports -->
+                <record mode="equal" get_property="section" value="mnar" comparison_mode="or"/>
+                <!-- responsibilities: scouting -->
+                <record mode="equal" get_property="section" value="mnsc" comparison_mode="or"/>
+                <!-- responsibilities: transfers & contracts -->
+                <record mode="equal" get_property="section" value="mntc" comparison_mode="or"/>
+                <!-- responsibilities: media -->
+                <record mode="equal" get_property="section" value="mnme" comparison_mode="or"/>
+                <!-- responsibilities: training -->
+                <record mode="equal" get_property="section" value="mntr" comparison_mode="or"/>
+                <!-- responsibilities: tactics -->
+                <record mode="equal" get_property="section" value="mnta" comparison_mode="or"/>
+                <!-- responsibilities: match -->
+                <record mode="equal" get_property="section" value="mnma" comparison_mode="or"/>
+                <!-- staff search -->
+                <record mode="equal" get_property="section" value="stfs" comparison_mode="or"/>
+                <!-- staff shortlist -->
+                <record mode="equal" get_property="section" value="stsh" comparison_mode="or"/>
+                <!-- job centre -->
+                <record mode="equal" get_property="section" value="Pjjc" comparison_mode="or"/>
+                <!-- job security -->
+                <record mode="equal" get_property="section" value="Pjjs" comparison_mode="or"/>
+
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Tactics -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset" red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Tactics" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- overview -->
+                <record mode="equal" get_property="section" value="tacO"/>
+                <!-- team instructions -->
+                <record mode="equal" get_property="section" value="tacT" comparison_mode="or"/>
+                <!-- player instructions -->
+                <record mode="equal" get_property="section" value="tacP" comparison_mode="or"/>
+                <!-- set pieces: set piece takers -->
+                <record mode="equal" get_property="section" value="tacS" comparison_mode="or"/>
+                <!-- set pieces: corners -->
+                <record mode="equal" get_property="section" value="tacR" comparison_mode="or"/>
+                <!-- set pieces: free kicks -->
+                <record mode="equal" get_property="section" value="tacK" comparison_mode="or"/>
+                <!-- set pieces: throw ins -->
+                <record mode="equal" get_property="section" value="tacH" comparison_mode="or"/>
+                <!-- set pieces: penalties -->
+                <record mode="equal" get_property="section" value="tacN" comparison_mode="or"/>
+                <!-- captains -->
+                <record mode="equal" get_property="section" value="tacC" comparison_mode="or"/>
+                <!-- match plans -->
+                <record mode="equal" get_property="section" value="tacW" comparison_mode="or"/>
+                <!-- opposition instructions -->
+                <record mode="equal" get_property="section" value="tacI" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+    <!-- Training -->
+    <widget class="icon_button" appearance="chrome/buttons/items/button" icon="icons/26px/matchset"  red_replacement="white"  icon_alignment="centre_x,centre_y">
+        <record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207"/>
+        <translation id="hint" type="use" value="Tutorial: Training" />
+        <attachment class="test_multiple_globals_attachment" default_value="false">
+            <list id="get_properties">
+                <!-- overview -->
+                <record mode="equal" get_property="section" value="TeOv"/>
+                <!-- calendar -->
+                <record mode="equal" get_property="section" value="ttcP" comparison_mode="or"/>
+                <!-- schedule -->
+                <record mode="equal" get_property="section" value="TtSh" comparison_mode="or"/>
+                <!-- units -->
+                <record mode="equal" get_property="section" value="TeUn" comparison_mode="or"/>
+                <!-- mentoring -->
+                <record mode="equal" get_property="section" value="TeMn" comparison_mode="or"/>
+                <!-- individual -->
+                <record mode="equal" get_property="section" value="TeTi" comparison_mode="or"/>
+                <!-- rest -->
+                <record mode="equal" get_property="section" value="TeTR" comparison_mode="or"/>
+                <!-- coaches -->
+                <record mode="equal" get_property="section" value="TeTc" comparison_mode="or"/>
+            </list>
+            <integer id="set_property" value="Shwn" />
+        </attachment>
+    </widget>
+
+</panel>

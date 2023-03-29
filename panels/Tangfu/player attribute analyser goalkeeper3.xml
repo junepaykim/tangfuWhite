@@ -1,0 +1,116 @@
+<panel>
+  <real id="segment_count" value="4" />
+  <boolean id="show_inaccurate_category" value="true" />
+  
+  <!-- Scale the polygon to fit the widget and draw it in code -->
+  <boolean id="scale_picture" value="true" />
+  <!-- First layer colour-->
+  <record id="line_style">
+    <colour id="colour" name="bagualine" />
+    <real id="width" value="2" />
+  </record>
+  <!-- Second layer colour-->
+  <record id="second_colour">
+    <colour id="colour" name="fg accent" />
+    <real id="width" value="2" />
+  </record>
+  <!-- Radial lines dividing each segment -->
+  <record id="segment_divider_line_props">
+    <colour id="colour" red="100" green="100" blue="60" alpha="10" />
+    <real id="width" value="1.5" />
+  </record>
+  <!-- Style of the line around the edge of the polygon -->
+  <record id="polygon_edge_props">
+    <colour id="colour" name="text" />
+    <real id="width" value="0.8" />
+  </record>
+  <!-- Colours (and number) of the concentric polygon rings -->
+    <list id="ring_colours">
+    <colour name="bagua1"/>
+    <colour name="bagua2"/>
+    <colour name="bagua3"/>
+    <colour name="bagua4"/>
+    <colour name="bagua5"/>
+  </list>
+  
+  <list id="items">
+    <!-- layer 1 (there is only one) -->
+    <list>
+      <record id="item">
+        <translation id="name" translation_id="285380" type="use" value="Aerial[COMMENT: player profile, overview panel polygon category title]" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="0" /><!-- 角度 -->
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+		<!-- 制空 -->
+        <list id="attributes">
+			<integer value="Paab" />
+			<!-- 制空范围 -->
+			<integer value="Pjum" />
+			<!-- 弹跳 -->
+			<integer value="Phea" />
+			<!-- 头球 -->
+        </list>
+      </record>
+
+   
+      
+
+      <record id="item">
+        <translation id="name"  translation_id="227879" type="use" value="Pace" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="90" /><!-- 角度 -->
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+		<!-- 速度 -->
+        <list id="attributes">
+          <integer value="Ppac" />
+          <!-- 速度 -->
+          <integer value="Pacc" />
+          <!-- 爆发 -->
+      
+        </list>
+      </record>
+
+
+      <record id="item">
+      <translation id="name" translation_id="227898" type="use" value="Stamina" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="180" /><!-- 角度 -->
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+		<!-- 耐力 -->
+        <list id="attributes">
+          <integer value="Psta" />
+          <!-- 耐力 -->
+        
+        </list>
+      </record>
+
+      <record id="item">
+        <translation id="name" translation_id="227900" type="use" value="Strength" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="270" /><!-- 角度 -->
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+		 <!-- 强壮 -->
+        <list id="attributes">
+          <integer value="Pnft" />
+          <!-- 体质 -->
+          <integer value="Pstr" />
+          <!-- 强壮 -->
+      
+        </list>
+      </record>
+
+     
+
+  
+    </list>
+  </list>
+  <!-- outfield analyser panel -->
+</panel>

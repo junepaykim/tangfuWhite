@@ -1,0 +1,20 @@
+﻿<!-- Used on Club Vision - Performance - Transfer Activity Panel - Player Details 
+colour added to person button -->
+<panel>
+  <attachment_group class="vertical_arrange_autosize"/>
+
+  <container>
+
+  <attachment_group class="vertical_arrange_autosize_horizontal_centre"/>
+  
+  <widget class="person_button" auto_size="all" alignment="centre" person_is_player="true" icon_enabled="true" style="bold" colour="text">
+    <record id="object_property" get_property="Pers" set_property="valu" />
+  </widget>
+
+  </container>
+
+  <widget class="text" auto_size="vertical" alignment="centre" multiline="true" colour="faded text">
+    <record id="object_property" get_property="text" set_property="text" />
+  </widget>
+  
+</panel>

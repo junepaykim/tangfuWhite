@@ -1,0 +1,69 @@
+<!-- added colour to name - used on inbox when receiving several offers -->
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<boolean id="should_force_refresh" value="true" />
+	<string id="skin_style" value="subtle box" />
+
+	<container>
+		<attachment_group class="horizontal_arrange" horizontal_layout="75, -5, 100, 160, -4" horizontal_offset="0" horizontal_gap="10" vertical_alignment="vertical" vertical_inset="0" />
+
+		
+		<container>
+			<attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="bottom,extend"  />
+
+			<!-- player pic -->
+			<widget class="object_portrait_picture" id="ppic" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" width="75"/>
+
+			<widget class="player_status_button" id="plsf" height="30" />
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+            <widget class="person_button" alignment="left, centre_y" auto_size="vertical" style="bold" person_is_player="true" colour="text">
+                <record id="object_property" get_property="objt" set_property="valu" />
+            </widget>
+			<widget class="dob_label" id="agtx" display_format="2" alignment="left,centre_y" auto_size="all" style="bold" />
+			<widget class="nation_button" id="nttx" alignment="left,centre_y" auto_size="vertical" colour="faded text" icon_enabled="false" format="[%nation#1-nationality]" navigation_focus_target="false" />
+			<widget class="club_button" id="cltx" alignment="left,centre_y" auto_size="vertical" colour="faded text" icon_enabled="false" navigation_focus_target="false" />
+			<widget class="position_label" id="pstx" spec="text" alignment="left,centre_y" auto_size="all" display_format="0" multiline="false" colour="faded text" />
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" vertical_gap="2" horizontal_alignment="horizontal" horizontal_inset="0" />
+
+			<!-- wage -->
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_gap="2" />
+
+				<widget class="text" alignment="left,centre_y" font="label" size="small" auto_size="vertical">
+					<translation id="text" translation_id="227799" type="use" value="Wage" />
+				</widget>
+				<widget class="text" id="plwg" alignment="left,centre_y,can_scale" multiline="false" font="value" height="25" />
+			</container>
+
+
+
+		</container>
+
+		<!-- value -->
+		<container>
+			<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_offset="0" horizontal_inset="0" />
+			
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="middle" vertical_gap="2" />
+				
+				<widget class="text" alignment="left,centre_y" font="label" size="small" auto_size="vertical">
+					<translation id="text" translation_id="538841" type="use" value="Transfer Value[COMMENT: AREA: Transfers; SUB-AREA: Transfer Value; FR-BN: 34410; TONE: Formal; CHARLIMIT: Shortish, column header; REF-ID: 227806; NOTE: displays the player's estimated transfer value in a range]" />
+				</widget>
+
+                <widget class="transfer_value_label" id="tnVL" alignment="left, centre_y" auto_size="all" font="value" hide_offer_action_button="true" />
+			</container>
+		</container>
+
+		<widget class="transfer_offer_interest_panel" file="player/transfer offer interest inbox panel" id="ptin" />
+	</container>
+
+</panel>

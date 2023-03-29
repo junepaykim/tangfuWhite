@@ -1,0 +1,23 @@
+<panel class="client_object_viewer_xml_panel" id="CaEd">
+    <attachment_group class="vertical_arrange_autosize"/>
+
+    <widget class="client_object_list_property_panel" id="afcl" edit_mode="true" navigation_container="true" height="500">
+        <record id="list_table_properties">
+            <integer id="default_sort_column" value="affl" />
+            <list id="views">
+                <record id="over">
+                    <record id="view">
+                        <flags id="affl" />
+                        <!-- affiliated club -->
+                        <flags id="ismc" />
+                        <!-- is this the main club -->
+                        <flags id="endt" />
+                        <!-- end date -->
+                    </record>
+                </record>
+            </list>
+        </record>
+        <record id="Cols" file="properties/affiliation properties" />
+        <integer id="viewed_property_ids" value="Cafl" />
+    </widget>
+</panel>

@@ -1,0 +1,20 @@
+﻿<record>
+	<!-- resource manager options -->
+
+	<!-- we don't preload the graphics files, but we do cache them once they've loaded -->
+	<boolean id="cache" value="true"/>
+	
+	<!-- font remapping -->
+	<list id="maps">
+		<record from="proximanova-bold" to="fonts/GT-America-Standard-Black" filter="greek"/>
+		<record from="proximanova-semibold" to="fonts/GT-America-Standard-Bold" filter="greek"/>
+		<record from="proximanova-regular" to="fonts/GT-America-Standard-Light" filter="greek"/>
+		<record from="proximanova-regular" to="fonts/GT-America-Standard-Regular" filter="greek" />
+	
+		<record from="proximanova-bold" to="fonts/GT-America-Standard-Black" filter="russian"/>
+		<record from="proximanova-semibold" to="fonts/GT-America-Standard-Bold" filter="russian"/>
+		<record from="proximanova-regular" to="fonts/GT-America-Standard-Light" filter="russian"/>
+		<record from="proximanova-regular" to="fonts/GT-America-Standard-Regular" filter="russian" />
+	</list>
+	
+</record>

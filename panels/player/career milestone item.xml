@@ -1,0 +1,46 @@
+﻿<!-- used on player - history - milestones. Added icon placement/size to better fit -->
+<panel height="45">
+	<list id="draw_order">
+		<record entity_layout_id="at00"/>
+		<record entity_layout_id="at02"/>
+		<record entity_layout_id="at03"/>
+		<record entity_layout_id="at04"/>
+		<record entity_layout_id="at01"/>
+	</list>
+	<widget class="spacer" id="main">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</widget>
+	<widget class="spacer" id="fmin" embed_in_frame="true">
+		<boolean id="exclude_from_find" value="true"/>
+		<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
+	</widget>
+	<widget class="team_button" entity_layout_id="at04" alignment="centre_y,left" id="tema" icon_alignment="centre_y,left" width="136" height="45" name="team name">
+		<string id="keep_aspect_ratio" value="true"/>
+		<string id="font" value="value"/>
+		<string id="size" value="small"/>
+		<record id="primary_icon_size" width="40" height="40"/>
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="left" set_side="left" move_side="true" target="main"/>
+	</widget>
+	<widget class="picture" entity_layout_id="at00" id="awpi" keep_aspect_ratio="true" scale_picture="true" width="26" height="26" name="milestone_icon">
+		<string id="image_alignment" value="centre"/>
+		<layout class="stick_to_object_attachment" id="align_bottom" offset="10" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="20" get_side="right" set_side="left" move_side="true" target="at04"/>
+	</widget>
+	<widget class="text" entity_layout_id="at02" id="lndT" alignment="centre_y,left" auto_size="horizontal" height="45" name="milestone name">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" move_side="true" target="at00"/>
+	</widget>
+	<widget class="text" entity_layout_id="at03" id="year" alignment="centre_y,left" height="45" name="milestone date">
+		<string id="colour" value="faded text"/>
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" offset="10" get_side="right" set_side="left" target="at02"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+	</widget>
+	<widget class="horizontal_divider" entity_layout_id="at01" id="horizontal" height="5" name="divider">
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" move_side="true" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_left" get_side="left" set_side="left" target="main"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" set_side="right" target="main"/>
+	</widget>
+</panel>

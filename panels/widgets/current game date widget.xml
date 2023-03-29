@@ -1,0 +1,14 @@
+<panel height="45" width="90" background_colour="">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	<widget class="button" id="actn" appearance="chrome/buttons/continue/button" colour="primary" red_replacement="secondary" blue_replacement="primary" click_event="opcl" height="45" width="90"/>
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1, 16" gap="4" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="middle" gap="-2"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+			<widget class="text" id="dtam" auto_size="none" size="10.5" alignment="centre_x, bottom,can_scale" font="text" colour="primary" height="20" wants_mouse_events="false"/>
+			<widget class="text" id="dytm" auto_size="none" size="8.5" alignment="centre_x, top,can_scale" font="text" colour="primary" height="16" wants_mouse_events="false"/>
+		</container>
+	</container>
+</panel>
