@@ -18,11 +18,22 @@
 			<!-- 이적 -->
 
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
-				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+				<!-- 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
 
 				<widget class="client_object_viewer_selector_panel" id="cos7" file="Tangfu/tangfu player selector panel5" priority="3">
+				</widget> -->
+
+				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+				<widget class="client_object_viewer_selector_panel" id="cos6" file="Tangfu/tangfu player selector panel4" late_loading="true" default_height="320" minimum_height="320" priority="2">
+					<translation id="title" translation_id="248079" type="use" value="Reports" />
+					<integer id="default_for_unemployed_managers" value="gprt"/>
+					<integer id="default_for_international_managers_other_team" value="gprt"/>
+					<integer id="default_for_everyone_else" value="gprt"/>
+					<integer id="default_for_versus_mode" value="gprt"/>
+					<record id="object_property" get_property="objt" set_property="objt"/>
 				</widget>
 
 			</container>
@@ -72,7 +83,7 @@
 					<record id="object_property" get_property="objt" set_property="objt"/>
 				</widget>
 			</container>
-			<!--위치-->
+			<!--포지션-->
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="21">
 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
@@ -548,7 +559,7 @@
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
 
-			<!--1-->
+			<!--1 몸상태-->
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
@@ -575,7 +586,7 @@
 
 
 
-			<!--2-->
+			<!--2 선수 상태-->
 
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
@@ -613,7 +624,7 @@
 			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="5"/>
 			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
-			<!--3-->
+			<!--3 경기력 훈련-->
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
 				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
@@ -635,7 +646,7 @@
 				</container>
 			</container>
 
-			<!--4-->
+			<!--4 출장 정지-->
 
 			<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
 				<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
