@@ -120,24 +120,10 @@
 				<!--중간 아바타-->
 				<container class="tabsface" id="tac22" priority="0">
 					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
-
-
-					<widget class="player_personal_details_panel" id="face01" file="Tangfu/tangfu player face 01" late_loading="true">
-						<translation id="title" type="use" value="头像框BOX" />
-						<record id="object_property" get_property="objt" set_property="objt"/>
-					</widget>
-
 					<widget class="player_personal_details_panel" id="face02" file="Tangfu/tangfu player face 02" late_loading="true">
-						<translation id="title" type="use" value="标准NO-BOX" />
+						<!-- <translation id="title" type="use" value="标准NO-BOX" /> -->
 						<record id="object_property" get_property="objt" set_property="objt"/>
 					</widget>
-
-					<widget class="player_personal_details_panel" id="face03" file="Tangfu/tangfu player face 03" late_loading="true">
-						<translation id="title" type="use" value="CA-PA" />
-						<record id="object_property" get_property="objt" set_property="objt"/>
-					</widget>
-
-
 				</container>
 			</container>
 
@@ -160,7 +146,7 @@
 					<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="7" gap="0" />
 					<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 
-					<widget class="text" type="use" value="유소년클럽" size="11" alignment="centre_x,centre_y" />
+					<widget class="text" type="use" value="유소년 클럽" size="11" alignment="centre_x,centre_y" />
 
 					<widget class="object_portrait_picture" id="qxqd" image_alignment="centre_x,centre_y" scale_picture="true" keep_aspect_ratio="true">
 						<translation id="hint" translation_id="363691" type="use" value="Nation trained in[COMMENT: player information; nation player trained at for purposes of domestic eligibility]" />

@@ -1,12 +1,12 @@
 <panel>
-	<layout class="arrange_horizontal_attachment" layout="-4,1,760,1,-4" offset="0" gap="2"/>
+	<layout class="arrange_horizontal_attachment" layout="540,1,760,1,-4" offset="0" gap="2"/>
 	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
 	<layout class="stick_to_sides_attachment" alignment="all" inset="2" />
 
 
 
 	<!-- 왼쪽 -->
-	<container offset="0" inset="0" gap="5" default_width="-4" priority="0" mode="distribute_equally" draw_horizontal_dividers="true">
+	<container offset="0" inset="0" gap="5" default_width="540" priority="0" mode="distribute_equally" draw_horizontal_dividers="true">
 		<layout class="arrange_vertical_attachment" layout="-1,-1,-1" offset="0" mode="distribute_equally" draw_horizontal_dividers="true" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 		<container draw_vertical_dividers="true">
@@ -48,18 +48,15 @@
 				<container class="tabsnormal" id="tac11" priority="0">
 					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
+					<widget file="Tangfu/tangfu player yincang3" id="tfyc3" class="player_personal_details_panel" save_session_state="true" save_default_state="true" late_loading="true">
+						<translation id="title" translation_id="348857" type="use" value="Hidden[COMMENT: steam workshop publishing panel; user can set the level of publicity for their steam workshop content]" />
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</widget>
 
 					<widget file="Tangfu/tangfu player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
 						<translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
 						<record id="object_property" get_property="objt" set_property="objt"/>
 					</widget>
-
-					<widget file="Tangfu/tangfu player yincang3" id="tfyc3" class="player_personal_details_panel" save_session_state="true" save_default_state="true" late_loading="true">
-						<translation id="title" translation_id="348857" type="use" value="Hidden[COMMENT: steam workshop publishing panel; user can set the level of publicity for their steam workshop content]" />
-						<record id="object_property" get_property="objt" set_property="objt"/>
-
-					</widget>
-
 				</container>
 			</container>
 
@@ -530,7 +527,7 @@
 
 	<!-- 오른쪽 첫 번째 열 -->
 	<container offset="0" inset="0" gap="5" default_width="-4" priority="2" mode="distribute_equally" draw_horizontal_dividers="true">
-		<layout class="arrange_vertical_attachment" layout="-3,-1,-1,-1" offset="0" mode="distribute_equally" draw_horizontal_dividers="true" />
+		<layout class="arrange_vertical_attachment" layout="-4,-1,-1,-1" offset="0" mode="distribute_equally" draw_horizontal_dividers="true" />
 		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
 		<layout class="arrange_vertical_attachment" layout="340,-1,-1,-1" offset="0" gap="0"/>
@@ -556,7 +553,6 @@
 			</widget>
 		</container>
 
-
 		<container draw_vertical_dividers="true">
 
 			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="5"/>
@@ -578,9 +574,6 @@
 						<translation id="title" translation_id="242773" type="use" value="Training" />
 						<record id="object_property" get_property="objt" set_property="objt"/>
 					</widget>
-
-
-
 				</container>
 			</container>
 
@@ -593,7 +586,6 @@
 				<container class="tabsnormal" id="tac17" priority="1">
 					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
 
-
 					<widget class="player_bans_overview_panel" section="PHst" id="pbop" late_loading="true">
 						<translation id="title" translation_id="247569" type="use" value="Bans" />
 						<record id="object_property" get_property="objt" set_property="objt"/>
@@ -603,15 +595,9 @@
 						<translation id="title" translation_id="230163" type="use" value="Contract" />
 						<record id="object_property" get_property="objt" set_property="objt"/>
 					</widget>
-
-
-
-
 				</container>
 			</container>
-
 		</container>
-
 
 		<!--경력 통계-->
 		<container class="bordered_box" appearance="tangfu/jianbian/paper" priority="1">
@@ -626,14 +612,5 @@
 				<record id="object_property" get_property="objt" set_property="objt"/>
 			</widget>
 		</container>
-
-
-
-
-
 	</container>
-
-
-
-
 </panel>
