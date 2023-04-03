@@ -1,41 +1,40 @@
-
 <panel>
 	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
 	<boolean id="should_force_refresh" value="true"/>
-	
-	
-				<!--中间头像-->			
-		
-					
-			
-				
-				
-				
-				
-					<widget class="object_portrait_picture" id="pict" scale_picture="true" image_alignment="centre_x,centre_y">
-						<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>						
-						<record id="object_property">
-							<integer id="get_property" value="objt"/>
-							<integer id="set_property" value="objt"/>
-						</record>
-					</widget>
-					
-					
-	
-					
-					
-					
-				<!-- Player Status  -->
-				<widget class="player_status_all_button" appearance="buttons/custom/status" id="Pnfa" alignment="bottom" gap="1" maximised="true">
-					<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
-					<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
-						<record id="object_property">
-							<integer id="get_property" value="PnaS"/>
-						</record>
-				</widget>	
-					
 
-	
+
+	<!--中间头像-->
+
+
+
+
+
+
+
+	<widget class="object_portrait_picture" id="pict" scale_picture="true" image_alignment="centre_x,centre_y">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0"/>
+		<record id="object_property">
+			<integer id="get_property" value="objt"/>
+			<integer id="set_property" value="objt"/>
+		</record>
+	</widget>
+
+
+
+
+
+
+	<!-- Player Status  -->
+	<widget class="player_status_all_button" appearance="buttons/custom/status" id="Pnfa" alignment="bottom" gap="1" maximised="true">
+		<layout class="stick_to_sides_attachment" alignment="top" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+		<record id="object_property">
+			<integer id="get_property" value="PnaS"/>
+		</record>
+	</widget>
+
+
+
 
 
 </panel>
